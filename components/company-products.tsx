@@ -47,11 +47,11 @@ const CompanyProducts = ({products}) => {
               <span className='text-h2-600 ms-4'>Popular Products</span>
             </span>
             <span className='flex h-6 rounded'>
-                <span className='mr-4 cursor-pointer hover:bg-gray-200 flex items-center justify-center' onClick={()=>
+                <span className='mr-4 cursor-pointer hover:bg-gray-200 flex items-center justify-center dark:hover:bg-primaryDarkHoverColor dark:hover:rounded' onClick={()=>
                   scrollToLeft()} aria-label="Scroll Left">
                   <Image alt='previous-product' height={20} width={20} objectFit="contain" src={'https://res.cloudinary.com/dankrz15s/image/upload/v1708274022/india-index/chevron-left_n7ayoa.svg'}/>
                 </span>
-                <span className='cursor-pointer hover:bg-gray-200 flex items-center justify-center' onClick={()=>
+                <span className='cursor-pointer hover:bg-gray-200 flex items-center justify-center dark:hover:bg-primaryDarkHoverColor dark:hover:rounded' onClick={()=>
                   scrollToRight()} aria-label="Scroll Right">
                   <Image alt='next-product' height={20} width={20} objectFit="contain" src={'https://res.cloudinary.com/dankrz15s/image/upload/v1708274023/india-index/chevron-right_mj1rtj.svg'}/>
                 </span>
