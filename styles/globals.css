@@ -1,0 +1,78 @@
+@import url('https://db.onlinewebfonts.com/c/023dc974594902cd76abbb722ee0fd51?family=Helvetica+Now+Var+W05+Regular');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* > *{
+  font-family: "Helvetica Now Var W05 Regular";
+}
+/* Below is the code for over riding the CSS of Carousel */
+.carousel .slider-wrapper {
+  border-radius: 1rem
+}
+.carousel.carousel-slider {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-status {
+  display: none;
+}
+.control-dots {
+  width: 180px !important;
+  border: 1px solid white;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  border-radius: 1rem;
+}
+.carousel .control-dots .dot {
+  width: 40px !important;
+  background-color: white !important;
+  border-radius: 1rem !important;
+  color: black !important;
+  border-bottom-color: white;
+  border-right-color: white;
+}
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  color: #161B26 !important;
+}
+.carousel .thumbs-wrapper {
+  display: none;
+}
+/* End of the above code */
+/* below is the CSS for Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #161B26;
+  color: #CECFD2;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 1rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -160px;
+}
+.tooltip .tooltiptext .tooltip-heading{
+  display: block;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* End of the above code */
